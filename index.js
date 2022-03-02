@@ -1,7 +1,7 @@
-let imageWrapper = document.querySelectorAll('svg')
-let images = document.getElementsByTagName('img')
-let test = document.querySelector('#test')
-let card = document.querySelectorAll('#card')
+// let imageWrapper = document.querySelectorAll('svg')
+// let images = document.getElementsByTagName('img')
+// let test = document.querySelector('#test')
+let card = document.querySelectorAll('#card') //selected a div
 
 // console.log(imageWrapper)
 function loadImages()
@@ -18,7 +18,7 @@ function loadImages()
             for (let dat of data.photos)
             // for (let i = 0; i < images.length; i++)
             {
-                card.innerHTML = `<div>${data.photos}</div>`
+                card.innerHTML = `<div>${data.photos[0].src.large}</div>`
                 // test.photos[0].src.large
                 // images[i] = images.photos[i].src.large
                 // imageWrapper[i].style.display = 'none'
